@@ -1,0 +1,12 @@
+C:\Users\admin\RideSharing\src\RideSharing.Domain\bin\Debug\net9.0\RideSharing.Domain.deps.json
+C:\Users\admin\RideSharing\src\RideSharing.Domain\bin\Debug\net9.0\RideSharing.Domain.dll
+C:\Users\admin\RideSharing\src\RideSharing.Domain\bin\Debug\net9.0\RideSharing.Domain.pdb
+C:\Users\admin\RideSharing\src\RideSharing.Domain\obj\Debug\net9.0\RideSharing.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\RideSharing\src\RideSharing.Domain\obj\Debug\net9.0\RideSharing.Domain.AssemblyInfoInputs.cache
+C:\Users\admin\RideSharing\src\RideSharing.Domain\obj\Debug\net9.0\RideSharing.Domain.AssemblyInfo.cs
+C:\Users\admin\RideSharing\src\RideSharing.Domain\obj\Debug\net9.0\RideSharing.Domain.csproj.CoreCompileInputs.cache
+C:\Users\admin\RideSharing\src\RideSharing.Domain\obj\Debug\net9.0\RideSharing.Domain.sourcelink.json
+C:\Users\admin\RideSharing\src\RideSharing.Domain\obj\Debug\net9.0\RideSharing.Domain.dll
+C:\Users\admin\RideSharing\src\RideSharing.Domain\obj\Debug\net9.0\refint\RideSharing.Domain.dll
+C:\Users\admin\RideSharing\src\RideSharing.Domain\obj\Debug\net9.0\RideSharing.Domain.pdb
+C:\Users\admin\RideSharing\src\RideSharing.Domain\obj\Debug\net9.0\ref\RideSharing.Domain.dll

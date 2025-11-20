@@ -1171,18 +1171,41 @@
           }
         }
       },
-      "RideService/1.0.0": {
+      "RideSharing.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
+          "RideSharing.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/RideService.dll": {}
+          "bin/placeholder/RideSharing.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/RideService.dll": {}
+          "bin/placeholder/RideSharing.Application.dll": {}
+        }
+      },
+      "RideSharing.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/RideSharing.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RideSharing.Domain.dll": {}
+        }
+      },
+      "RideSharing.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "RideSharing.Application": "1.0.0",
+          "RideSharing.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RideSharing.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RideSharing.Infrastructure.dll": {}
         }
       }
     }
@@ -3207,21 +3230,33 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "RideService/1.0.0": {
+    "RideSharing.Application/1.0.0": {
       "type": "project",
-      "path": "../Services/RideService/RideService.csproj",
-      "msbuildProject": "../Services/RideService/RideService.csproj"
+      "path": "../RideSharing.Application/RideSharing.Application.csproj",
+      "msbuildProject": "../RideSharing.Application/RideSharing.Application.csproj"
+    },
+    "RideSharing.Domain/1.0.0": {
+      "type": "project",
+      "path": "../RideSharing.Domain/RideSharing.Domain.csproj",
+      "msbuildProject": "../RideSharing.Domain/RideSharing.Domain.csproj"
+    },
+    "RideSharing.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../RideSharing.Infrastructure/RideSharing.Infrastructure.csproj",
+      "msbuildProject": "../RideSharing.Infrastructure/RideSharing.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "C:\\Users\\admin\\RideSharing\\src\\Services\\RideService\\RideService.csproj",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.1.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 9.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 9.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.0",
       "Microsoft.IdentityModel.Tokens >= 8.14.0",
-      "RideService >= 1.0.0",
+      "RideSharing.Application >= 1.0.0",
+      "RideSharing.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 10.0.1"
     ]
   },
@@ -3257,6 +3292,12 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Application\\RideSharing.Application.csproj": {
+              "projectPath": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Application\\RideSharing.Application.csproj"
+            },
+            "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Infrastructure\\RideSharing.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Infrastructure\\RideSharing.Infrastructure.csproj"
+            },
             "C:\\Users\\admin\\RideSharing\\src\\Services\\RideService\\RideService.csproj": {
               "projectPath": "C:\\Users\\admin\\RideSharing\\src\\Services\\RideService\\RideService.csproj"
             }
@@ -3332,5 +3373,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\admin\\RideSharing\\src\\Services\\RideService\\RideService.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\admin\\RideSharing\\src\\Services\\RideService\\RideService.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }
