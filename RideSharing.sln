@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{56DC27B1-5593-460A-B698-34A5E5150A53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RideSharing.Api", "src\RideSharing.Api\RideSharing.Api.csproj", "{509F79CB-92B8-4CF5-B7E5-BD813C3B9F5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{D5E124A9-193B-429B-B3B2-E133F7A18C5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RideService", "src\Services\RideService\RideService.csproj", "{4C09FEA5-2936-4A14-A68B-C79B588F68C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{509F79CB-92B8-4CF5-B7E5-BD813C3B9F5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{509F79CB-92B8-4CF5-B7E5-BD813C3B9F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{509F79CB-92B8-4CF5-B7E5-BD813C3B9F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{509F79CB-92B8-4CF5-B7E5-BD813C3B9F5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C09FEA5-2936-4A14-A68B-C79B588F68C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C09FEA5-2936-4A14-A68B-C79B588F68C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C09FEA5-2936-4A14-A68B-C79B588F68C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C09FEA5-2936-4A14-A68B-C79B588F68C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{509F79CB-92B8-4CF5-B7E5-BD813C3B9F5C} = {56DC27B1-5593-460A-B698-34A5E5150A53}
+		{D5E124A9-193B-429B-B3B2-E133F7A18C5D} = {56DC27B1-5593-460A-B698-34A5E5150A53}
+		{4C09FEA5-2936-4A14-A68B-C79B588F68C9} = {D5E124A9-193B-429B-B3B2-E133F7A18C5D}
+	EndGlobalSection
+EndGlobal
