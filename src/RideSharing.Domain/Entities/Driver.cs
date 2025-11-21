@@ -1,4 +1,4 @@
-﻿using RideSharing.Domain.ValueObjects;
+﻿
 using RideSharing.Domain.Enums;
 using RideSharing.Domain.Common;
 using RideSharing.Domain.Events;
@@ -20,7 +20,9 @@ public class Driver
     public string PhoneNumber { get; private set; }
 
     public DriverStatus Status { get; private set; }
-    public DriverLocation Location { get; private set; }
+
+    // ❗ THIS MUST BE NULLABLE
+    public DriverLocation? Location { get; private set; }
 
     private Driver() { } // EF ke liye
 
@@ -31,15 +33,13 @@ public class Driver
         PhoneNumber = phone;
         Status = DriverStatus.Offline;
 
-        // 🔥 Event Raised
         AddEvent(new DriverRegisteredEvent(Id));
     }
 
     public void UpdateLocation(double lat, double lng)
     {
-        Location = new DriverLocation(lat, lng);
+        
 
-        // 🔥 Event Raised
         AddEvent(new DriverLocationUpdatedEvent(Id, Location));
     }
 
@@ -47,7 +47,6 @@ public class Driver
     {
         Status = status;
 
-        // 🔥 Event Raised
         AddEvent(new DriverStatusChangedEvent(Id, status));
     }
 }

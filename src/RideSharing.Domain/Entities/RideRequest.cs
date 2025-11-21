@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace RideSharing.Domain.Entities;
 
-namespace RideSharing.Domain.Entities
+public class RideRequest
 {
-    internal class RideRequest
-    {
-    }
+    public Guid Id { get; set; }
+    public Guid UserId { get; set; }
+    public string Pickup { get; set; }
+    public string Destination { get; set; }
+    public string Status { get; set; } // Pending, Accepted, Completed, Cancelled
 }

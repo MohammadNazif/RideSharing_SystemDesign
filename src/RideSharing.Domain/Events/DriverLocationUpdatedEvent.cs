@@ -1,5 +1,5 @@
 ﻿using RideSharing.Domain.Common;
-using RideSharing.Domain.ValueObjects;
+
 
 namespace RideSharing.Domain.Events;
 

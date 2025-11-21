@@ -4,6 +4,8 @@ namespace RideSharing.Domain.Interfaces;
 
 public interface IDriverRepository
 {
-    Task<Driver?> GetAvailableDriverAsync();
+    Task<Driver?> GetByIdAsync(Guid id);
     Task AddAsync(Driver driver);
+    Task UpdateAsync(Driver driver);
+    Task<List<Driver>> GetAvailableDriversAsync();
 }

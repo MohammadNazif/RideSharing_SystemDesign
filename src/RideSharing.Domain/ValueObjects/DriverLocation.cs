@@ -1,15 +1,12 @@
-﻿namespace RideSharing.Domain.ValueObjects;
+﻿using RideSharing.Domain.Entities;
 
 public class DriverLocation
 {
-    public double Latitude { get; private set; }
-    public double Longitude { get; private set; }
+    public Guid Id { get; set; }
+    public Guid DriverId { get; set; }
 
-    private DriverLocation() { }
+    public double Latitude { get; set; }
+    public double Longitude { get; set; }
 
-    public DriverLocation(double lat, double lng)
-    {
-        Latitude = lat;
-        Longitude = lng;
-    }
+    public Driver Driver { get; set; }
 }

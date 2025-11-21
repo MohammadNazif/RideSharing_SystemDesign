@@ -3,8 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using RideSharing.Api.RideSharing.Application.Models;
-using RideSharing.Api.RideSharing.Infrastructure.Data;
+
 using RideSharing.Infrastructure;
 using RideSharing.Api.Endpoints;
 

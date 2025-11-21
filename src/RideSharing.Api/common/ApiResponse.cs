@@ -24,7 +24,7 @@ public static class ApiResponse
         {
             // TODO: replace with real logger
             Console.Error.WriteLine(ex);
-            return Results.StatusCode(500, new { success = false, message = "Something went wrong", detail = ex.Message });
+            return Results.StatusCode(500);
         }
     }
 
