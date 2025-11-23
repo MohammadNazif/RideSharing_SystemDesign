@@ -8,4 +8,6 @@ public interface IDriverRepository
     Task AddAsync(Driver driver);
     Task UpdateAsync(Driver driver);
     Task<List<Driver>> GetAvailableDriversAsync();
+
+    void Remove(Driver driver);
 }

@@ -33,15 +33,21 @@ public class Driver
         PhoneNumber = phone;
         Status = DriverStatus.Offline;
 
+        // FIX HERE
+        Location = new DriverLocation(Id, 0, 0);  // default lat/lng
+
         AddEvent(new DriverRegisteredEvent(Id));
     }
 
     public void UpdateLocation(double lat, double lng)
     {
-        
+
+        Location.Latitude = lat;
+        Location.Longitude = lng;
 
         AddEvent(new DriverLocationUpdatedEvent(Id, Location));
     }
+
 
     public void ChangeStatus(DriverStatus status)
     {
