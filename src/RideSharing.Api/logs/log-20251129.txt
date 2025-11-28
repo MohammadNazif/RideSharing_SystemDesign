@@ -1,0 +1,6 @@
+	2025-11-29 00:02:36.258 +05:30 [INF] Now listening on: https://localhost:7184
+	2025-11-29 00:02:36.323 +05:30 [INF] Now listening on: http://localhost:5220
+	2025-11-29 00:02:36.787 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+	2025-11-29 00:02:36.795 +05:30 [INF] Hosting environment: Development
+	2025-11-29 00:02:36.798 +05:30 [INF] Content root path: C:\Users\admin\RideSharing\src\RideSharing.Api
+	2025-11-29 00:05:52.510 +05:30 [INF] Driver Location Updated: "89b83a65-3f43-4bea-9f5e-638c8ab981e1" -> 121.23, 332.232

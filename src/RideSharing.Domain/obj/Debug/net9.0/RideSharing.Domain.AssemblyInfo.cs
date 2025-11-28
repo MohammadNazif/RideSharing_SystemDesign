@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RideSharing.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4a201c24128ab9db7c2de5f0be5ae77a4d5d45e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be855545022bd0035c2c2200bd77de5c99865734")]
 [assembly: System.Reflection.AssemblyProductAttribute("RideSharing.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RideSharing.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

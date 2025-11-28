@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\RideSharing\\src\\RideSharing.Api\\RideSharing.Api.csproj": {}
+    "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Api\\RideSharing.Api.csproj": {}
   },
   "projects": {
-    "E:\\RideSharing\\src\\RideSharing.Api\\RideSharing.Api.csproj": {
+    "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Api\\RideSharing.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\RideSharing\\src\\RideSharing.Api\\RideSharing.Api.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Api\\RideSharing.Api.csproj",
         "projectName": "RideSharing.Api",
-        "projectPath": "E:\\RideSharing\\src\\RideSharing.Api\\RideSharing.Api.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "E:\\RideSharing\\src\\RideSharing.Api\\obj\\",
+        "projectPath": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Api\\RideSharing.Api.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,18 +26,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "E:\\RideSharing\\src\\RideSharing.Application\\RideSharing.Application.csproj": {
-                "projectPath": "E:\\RideSharing\\src\\RideSharing.Application\\RideSharing.Application.csproj"
+              "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Application\\RideSharing.Application.csproj": {
+                "projectPath": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Application\\RideSharing.Application.csproj"
               },
-              "E:\\RideSharing\\src\\RideSharing.Infrastructure\\RideSharing.Infrastructure.csproj": {
-                "projectPath": "E:\\RideSharing\\src\\RideSharing.Infrastructure\\RideSharing.Infrastructure.csproj"
+              "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Infrastructure\\RideSharing.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Infrastructure\\RideSharing.Infrastructure.csproj"
               }
             }
           }
@@ -52,7 +51,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -102,6 +101,10 @@
               "target": "Package",
               "version": "[8.14.0, )"
             },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[10.0.1, )"
@@ -130,24 +133,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\RideSharing\\src\\RideSharing.Application\\RideSharing.Application.csproj": {
+    "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Application\\RideSharing.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\RideSharing\\src\\RideSharing.Application\\RideSharing.Application.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Application\\RideSharing.Application.csproj",
         "projectName": "RideSharing.Application",
-        "projectPath": "E:\\RideSharing\\src\\RideSharing.Application\\RideSharing.Application.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "E:\\RideSharing\\src\\RideSharing.Application\\obj\\",
+        "projectPath": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Application\\RideSharing.Application.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -156,15 +159,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "E:\\RideSharing\\src\\RideSharing.Domain\\RideSharing.Domain.csproj": {
-                "projectPath": "E:\\RideSharing\\src\\RideSharing.Domain\\RideSharing.Domain.csproj"
+              "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Domain\\RideSharing.Domain.csproj": {
+                "projectPath": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Domain\\RideSharing.Domain.csproj"
               }
             }
           }
@@ -179,7 +181,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -192,6 +194,14 @@
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[10.0.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "System.Text.Json": {
               "target": "Package",
@@ -214,24 +224,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\RideSharing\\src\\RideSharing.Domain\\RideSharing.Domain.csproj": {
+    "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Domain\\RideSharing.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\RideSharing\\src\\RideSharing.Domain\\RideSharing.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Domain\\RideSharing.Domain.csproj",
         "projectName": "RideSharing.Domain",
-        "projectPath": "E:\\RideSharing\\src\\RideSharing.Domain\\RideSharing.Domain.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "E:\\RideSharing\\src\\RideSharing.Domain\\obj\\",
+        "projectPath": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Domain\\RideSharing.Domain.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -240,7 +250,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -259,7 +268,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -276,6 +285,10 @@
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[10.0.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             },
             "System.Text.Json": {
               "target": "Package",
@@ -298,24 +311,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\RideSharing\\src\\RideSharing.Infrastructure\\RideSharing.Infrastructure.csproj": {
+    "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Infrastructure\\RideSharing.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\RideSharing\\src\\RideSharing.Infrastructure\\RideSharing.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Infrastructure\\RideSharing.Infrastructure.csproj",
         "projectName": "RideSharing.Infrastructure",
-        "projectPath": "E:\\RideSharing\\src\\RideSharing.Infrastructure\\RideSharing.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "E:\\RideSharing\\src\\RideSharing.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Infrastructure\\RideSharing.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -324,18 +337,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "E:\\RideSharing\\src\\RideSharing.Application\\RideSharing.Application.csproj": {
-                "projectPath": "E:\\RideSharing\\src\\RideSharing.Application\\RideSharing.Application.csproj"
+              "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Application\\RideSharing.Application.csproj": {
+                "projectPath": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Application\\RideSharing.Application.csproj"
               },
-              "E:\\RideSharing\\src\\RideSharing.Domain\\RideSharing.Domain.csproj": {
-                "projectPath": "E:\\RideSharing\\src\\RideSharing.Domain\\RideSharing.Domain.csproj"
+              "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Domain\\RideSharing.Domain.csproj": {
+                "projectPath": "C:\\Users\\admin\\RideSharing\\src\\RideSharing.Domain\\RideSharing.Domain.csproj"
               }
             }
           }
@@ -350,7 +362,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -386,6 +398,10 @@
               "target": "Package",
               "version": "[10.0.0, )"
             },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "System.Text.Json": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -407,7 +423,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

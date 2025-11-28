@@ -1,19 +1,27 @@
 ﻿using MediatR;
+using Microsoft.Extensions.Logging;
 using RideSharing.Domain.Events;
 
-namespace RideSharing.Application.Drivers.Events
+public class DriverLocationUpdatedEventHandler
+    : INotificationHandler<DriverLocationUpdatedEvent>
 {
-    public class DriverLocationUpdatedEventHandler
-        : INotificationHandler<DriverLocationUpdatedEvent>
-    {
-        public Task Handle(DriverLocationUpdatedEvent notification, CancellationToken cancellationToken)
-        {
-            Console.WriteLine(
-                $"Driver Location Updated: {notification.DriverId} -> " +
-                $"{notification.Location.Latitude}, {notification.Location.Longitude}"
-            );
+    private readonly ILogger<DriverLocationUpdatedEventHandler> _logger;
 
-            return Task.CompletedTask;
-        }
+    public DriverLocationUpdatedEventHandler(
+        ILogger<DriverLocationUpdatedEventHandler> logger)
+    {
+        _logger = logger;
+    }
+
+    public Task Handle(DriverLocationUpdatedEvent notification, CancellationToken cancellationToken)
+    {
+        _logger.LogInformation(
+            "Driver Location Updated: {DriverId} -> {Lat}, {Lng}",
+            notification.DriverId,
+            notification.Location.Latitude,
+            notification.Location.Longitude
+        );
+
+        return Task.CompletedTask;
     }
 }
