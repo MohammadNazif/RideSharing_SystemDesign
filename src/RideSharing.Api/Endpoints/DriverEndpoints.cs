@@ -1,6 +1,7 @@
 ﻿using System.Data;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using RideSharing.Application.Drivers.Commands;
 using RideSharing.Application.Drivers.Commands.CreateDriver;
 using RideSharing.Application.Drivers.Commands.UpdateLocation;
 using RideSharing.Application.Drivers.Queries;
@@ -46,7 +47,7 @@ namespace RideSharing.Api.Endpoints
             });
 
 
-            group.MapPut("/{id:guid}/Status", async ([FromRoute] Guid id, UpdateStatus cmd, IMediator mediator) =>
+            group.MapPut("/{id:guid}/Status", async ([FromRoute] Guid id, ChangeStatus cmd, IMediator mediator) =>
             {
 
                 var driver = await mediator.Send(cmd);

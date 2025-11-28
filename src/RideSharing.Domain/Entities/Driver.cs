@@ -5,15 +5,9 @@ using RideSharing.Domain.Events;
 
 namespace RideSharing.Domain.Entities;
 
-public class Driver
+public class Driver : BaseEntity
 {
-    private readonly List<IDomainEvent> _events = new();
-    public IReadOnlyList<IDomainEvent> Events => _events.AsReadOnly();
-
-    private void AddEvent(IDomainEvent domainEvent)
-    {
-        _events.Add(domainEvent);
-    }
+   
 
     public Guid Id { get; private set; }
     public string Name { get; private set; }
@@ -36,7 +30,7 @@ public class Driver
         // FIX HERE
         Location = new DriverLocation(Id, 0, 0);  // default lat/lng
 
-        AddEvent(new DriverRegisteredEvent(Id));
+        AddDomainEvent(new DriverRegisteredEvent(Id));
     }
 
     public void UpdateLocation(double lat, double lng)
@@ -45,7 +39,7 @@ public class Driver
         Location.Latitude = lat;
         Location.Longitude = lng;
 
-        AddEvent(new DriverLocationUpdatedEvent(Id, Location));
+        AddDomainEvent(new DriverLocationUpdatedEvent(Id, Location));
     }
 
 
@@ -53,6 +47,6 @@ public class Driver
     {
         Status = status;
 
-        AddEvent(new DriverStatusChangedEvent(Id, status));
+        AddDomainEvent(new DriverStatusChangedEvent(Id, status));
     }
 }

@@ -12,8 +12,8 @@ using RideSharing.Infrastructure.Data;
 namespace RideSharing.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251121201834_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20251126103958_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -47,5 +47,7 @@ namespace RideSharing.Infrastructure.Data.Repositories
         {
              _context.Drivers.Update(driver);
         }
+
+        
     }
 }

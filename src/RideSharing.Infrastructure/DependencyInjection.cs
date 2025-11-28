@@ -5,6 +5,7 @@ using RideSharing.Domain.Common;
 using RideSharing.Domain.Interfaces;
 using RideSharing.Infrastructure.Data;
 using RideSharing.Infrastructure.Data.Repositories;
+using RideSharing.Infrastructure.Events;
 
 namespace RideSharing.Infrastructure;
 
@@ -18,6 +19,7 @@ public static class DependencyInjection
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped<IDriverRepository, DriverRepo>();
+        services.AddScoped<IDomainEventDispatcher, DomainEventDispatcher>();
 
         return services;
     }

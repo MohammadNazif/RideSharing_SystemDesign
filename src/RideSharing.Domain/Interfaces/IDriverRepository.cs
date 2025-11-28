@@ -1,4 +1,5 @@
-﻿using RideSharing.Domain.Entities;
+﻿using System.Data;
+using RideSharing.Domain.Entities;
 
 namespace RideSharing.Domain.Interfaces;
 
@@ -9,5 +10,6 @@ public interface IDriverRepository
     Task UpdateAsync(Driver driver);
     Task<List<Driver>> GetAvailableDriversAsync();
 
+   
     void Remove(Driver driver);
 }

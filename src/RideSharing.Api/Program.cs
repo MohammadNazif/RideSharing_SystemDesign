@@ -3,6 +3,7 @@ using RideSharing.Infrastructure;
 using RideSharing.Api.Endpoints;
 using RideSharing.Application.Drivers.Queries;
 using MediatR.Registration;
+using RideSharing.Application.Drivers.Events;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services
@@ -12,6 +13,7 @@ builder.Services.AddControllers();
 builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssembly(typeof(GetDriverQuery).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(DriverLocationUpdatedEventHandler).Assembly);
 });
 
 // register infra (DbContext, UnitOfWork, repos)

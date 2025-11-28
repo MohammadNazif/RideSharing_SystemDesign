@@ -1,3 +1,7 @@
-﻿namespace RideSharing.Domain.Common;
+﻿using MediatR;
 
-public interface IDomainEvent { }
+namespace RideSharing.Domain.Common;
+
+public interface IDomainEvent : INotification
+{
+}
